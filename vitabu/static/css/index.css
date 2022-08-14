@@ -5,8 +5,17 @@
   background-position: center;
   background-color:#f4a384 ;
   background-size: cover;
-  justify-items: center;  
+
+
 }
+
+.card{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 
 
 
