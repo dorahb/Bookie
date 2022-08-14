@@ -4,19 +4,26 @@
 
 {% block content %}
 
-<h2>Featured books</h2>
+<div class="home">
+  <h2>Featured books</h2>
+<div class="card" style="width: 100vh;">
+  {% for book in books %}
+   <img class="card-img-top" src="{{book.imageURL}}" alt="Card image cap">
+   <div class="card-body">
+     <h5 class="card-title">{{book.title}}</h5>
+     <h5>{{book.author}}</h5>
+     <p class="card-text">{{book.synopsis}}</p>
+     <a href="#" class="btn btn-primary">Review</a>
+   </div>
+     {% endfor %}
+ </div>
+</div>
 
 
 
-  <div class="card">
-    {% for book in books %}
-    <img src="{{book.imageURL}}" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>{{book.title}}</b></h4>
-      <p>{{book.author}}</p>
-    </div>
-    {% endfor %}
-  </div>     
+
+  
+   
 
 
 {% endblock %}
