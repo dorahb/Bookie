@@ -10,14 +10,15 @@ class Book(models.Model):
 
   def __str__(self):
         return self.title
-  
+
   @property
   def imageURL(self):
     try:
       url = self.image.url
     except:
       url = ''
-    return url  
+    return url
+
 
 
 class Review(models.Model):

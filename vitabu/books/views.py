@@ -4,11 +4,11 @@ from .models import Book, Review
 
 # Create your views here.
 def index(request):
-    books = Book.objects.all()
-    return render(request,'index.html',{'books':books})
+    return render(request,'index.html')
 
 def home(request):
-  return render (request,'home.html')
+    books = Book.objects.all()
+    return render (request,'home.html',{'books':books})
 
 def submit(request):
     return render(request,'submit.html')

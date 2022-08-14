@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'books.apps.BooksConfig',
     'cloudinary',
-    'bootstrap3'
+    'bootstrap3',
+    
     
     
 ]

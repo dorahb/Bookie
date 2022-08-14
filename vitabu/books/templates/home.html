@@ -3,5 +3,20 @@
 {% load static%}
 
 {% block content %}
-<h1>Home</h1>
-{% endblock content %}
+
+<h2>Featured books</h2>
+
+
+
+  <div class="card">
+    {% for book in books %}
+    <img src="{{book.imageURL}}" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{book.title}}</b></h4>
+      <p>{{book.author}}</p>
+    </div>
+    {% endfor %}
+  </div>     
+
+
+{% endblock %}
