@@ -1,0 +1,36 @@
+
+
+.homepage{
+  text-align: center;
+  background-position: center;
+  background-color: #f4a384;
+  /* background-size: cover; */
+  height: 100vh; 
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+[data-component="slideshow"] .slide {
+  display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
