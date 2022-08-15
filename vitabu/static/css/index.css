@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=PT+Serif:ital@0;1&family=Rubik+Burned&family=Rubik+Dirt&family=Rubik+Distressed&display=swap');
+
 .home{
   text-align: center;
   background-position: center;
   background-color:#f4a384 ;
   background-size: cover;
+
 
 
 }
@@ -36,6 +38,46 @@
   width: 40%;
   
 }
+
+
+
+.uploaded-pics {
+  object-fit: cover;
+  height: 300px;
+  width: 290px;
+  border-radius: 10%;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+.uploaded-pics:hover {
+  border: 2.5px solid white;
+  transition: 200ms;
+}
+
+.display-area {
+  padding: 3%;
+
+}
+
+.btn-modal {
+  background-color: #f4a384;
+  width: 25%;
+  color: white;
+  font-size: smaller;
+  margin: 2%;
+}
+
+.btn-modal:hover{
+  background-color: white;
+  color: #f4a384;
+  border: 1px solid #f4a384;
+  transition: 250ms;
+}
+
+.modal {
+  width: 175%;
+}
+
 
 
 

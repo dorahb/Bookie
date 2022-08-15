@@ -2,28 +2,42 @@
 {% load bootstrap3 %}
 {% load static%}
 
-{% block content %}
-
-<div class="home">
-  <h2>Featured books</h2>
-<div class="card" style="width: 100vh;">
-  {% for book in books %}
-   <img class="card-img-top" src="{{book.imageURL}}" alt="Card image cap">
-   <div class="card-body">
-     <h5 class="card-title">{{book.title}}</h5>
-     <h5>{{book.author}}</h5>
-     <p class="card-text">{{book.synopsis}}</p>
-     <a href="#" class="btn btn-primary">Review</a>
-   </div>
-     {% endfor %}
- </div>
-</div>
+{% block content%}
 
 
+  <div class="home text-center">
+    <div class="row">
+
+        {% for book in books %}
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center display-area">   
+            <a href="" data-toggle="modal" data-target="#myModal{{ book.id }}"><img
+                    src="{{book.imageURL}}" class="uploaded-pics" alt="Image"> </a> 
+        </div>
 
 
-  
-   
+        <div id="myModal{{book.id}}" class="modal fade" role="dialog" style="color:000">
+            <div class="modal-dialog">
+                <div class="modal-content mbody w3-black">
+                  <strong><br>
+                    <p> {{book.title}} </p>
+                </strong><hr>
+                    <div class="modal-body p-2">
+                        <img src="{{book.imageURL}}" style="width:auto; max-height:300px"><hr>
+                        <strong>
+                          <p> {{book.author}} </p>
+                      </strong> 
+                                   
+                        <p>{{book.synopsis}}</p>
+                    </div>
+                    <footer>
+                        <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 
+    {% endblock %}
 
-{% endblock %}
+  </div>
