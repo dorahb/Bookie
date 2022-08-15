@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=PT+Serif:ital@0;1&family=Rubik+Burned&family=Rubik+Dirt&family=Rubik+Distressed&display=swap');
 .home{
   text-align: center;
   background-position: center;
@@ -16,6 +15,27 @@
   width: 40%;
 }
 
+.basey{
+  background-image: url("/static/images/bcg1.jpg");
+  background-size: cover;
+  height:100vh;
+  color: white;  
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  align-items:center;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 50px;
+  
+  
+
+}
+
+.basey a{
+  width: 40%;
+  
+}
 
 
 

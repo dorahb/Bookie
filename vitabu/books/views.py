@@ -4,7 +4,7 @@ from .models import Book, Review
 
 # Create your views here.
 def index(request):
-    return render(request,'index.html')
+    return render(request,'base.html')
 
 def home(request):
     books = Book.objects.all()
