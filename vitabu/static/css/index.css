@@ -78,7 +78,8 @@
   width: 175%;
 }
 
-
-
-
-
+.search{
+  background-image: url("/static/images/bcg1.jpg");
+  background-size: cover;
+  height:100vh;  
+}
